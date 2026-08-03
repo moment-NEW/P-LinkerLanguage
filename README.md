@@ -1,5 +1,7 @@
 # P-LinkerLanguage Demo
 
+完整中文文档从 [docs/README.md](docs/README.md) 开始，包括链接基础、五分钟入门、布局 API、业务宏、双工具链接入、生成器原理、排错与扩展路线。
+
 本演示将链接布局表示成普通 C 结构体数组，而不是单行宏。Python 先按目标工具链选择 `#if` 分支，再用正则词法器将受控 C 子集解析成布局 IR，最后生成 GNU ld 或 Arm Compiler scatter 文件。
 
 ## 结构模型
